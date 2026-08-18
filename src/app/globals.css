@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #3a405a;
+  --color-ink-deep: #2b3047;
+  --color-ink-edge: #4a5171;
+  --color-cream: #f9dec9;
+  --color-cream-muted: #cbb9ad;
+  --color-sky: #99b2dd;
+  --color-rose: #e9afa3;
+  --color-umber: #685044;
+  --color-umber-light: #cfa88c;
+
+  --font-display: var(--font-display-loaded), ui-serif, Georgia, serif;
+  --font-body: var(--font-body-loaded), ui-sans-serif, system-ui, sans-serif;
+  --font-data: var(--font-data-loaded), ui-monospace, "SFMono-Regular", monospace;
+
+  --radius-panel: 4px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ink-deep);
+    background-image:
+      linear-gradient(to right, rgba(153, 178, 221, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(153, 178, 221, 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    font-feature-settings: "tnum" off;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-variation-settings: "SOFT" 20, "WONK" 1;
+    letter-spacing: -0.015em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sky);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    font-family: var(--font-data);
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .numeric {
+    font-family: var(--font-data);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
