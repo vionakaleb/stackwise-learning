@@ -15,8 +15,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: ConceptPageProps): Promise<Metadata> {
   const { conceptSlug } = await params;
   const concept = getConcept(conceptSlug);
-  if (!concept) return { title: "Concept not found — StackWise" };
-  return { title: `${concept.title} — StackWise`, description: concept.blurb };
+  if (!concept) return { title: "Concept not found - StackWise" };
+  return { title: `${concept.title} - StackWise`, description: concept.blurb };
 }
 
 export default async function ConceptPage({ params }: ConceptPageProps) {

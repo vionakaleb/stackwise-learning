@@ -4,7 +4,7 @@ import { concepts, tracks } from "@/content/tracks";
 import { accentClasses, plural } from "@/lib/formatting";
 
 export const metadata: Metadata = {
-  title: "Tracks — StackWise",
+  title: "Tracks - StackWise",
   description: "Four tracks covering algorithms, object design, distributed systems, and machine learning.",
 };
 

@@ -125,9 +125,9 @@ Topic sequences and curricula are not copyrightable, so teaching the same subjec
 
 Every real-world case carries one of three confidence labels, rendered in the UI next to a source note:
 
-- **verified** — checked against a primary source named in the note
-- **widely documented** — standard in public engineering literature, not re-verified line by line
-- **interpretation** — a design argument, not a sourced claim
+- **verified** - checked against a primary source named in the note
+- **widely documented** - standard in public engineering literature, not re-verified line by line
+- **interpretation** - a design argument, not a sourced claim
 
 The labels are part of the content type, so a case cannot ship without one.
 

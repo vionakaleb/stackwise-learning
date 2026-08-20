@@ -17,8 +17,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: TrackPageProps): Promise<Metadata> {
   const { trackId } = await params;
   const track = getTrack(trackId);
-  if (!track) return { title: "Track not found — StackWise" };
-  return { title: `${track.title} — StackWise`, description: track.description };
+  if (!track) return { title: "Track not found - StackWise" };
+  return { title: `${track.title} - StackWise`, description: track.description };
 }
 
 export default async function TrackPage({ params }: TrackPageProps) {

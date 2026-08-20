@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ProgressBoard } from "@/features/progress/ProgressBoard";
 
 export const metadata: Metadata = {
-  title: "Progress — StackWise",
+  title: "Progress - StackWise",
   description: "Your calibration score, puzzles cleared, and concepts finished.",
 };
 
