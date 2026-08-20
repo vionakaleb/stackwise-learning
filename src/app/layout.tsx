@@ -25,7 +25,7 @@ const dataFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StackWise - learn computer science by doing",
+  title: "StackWise - Learn computer science by doing",
   description:
     "Puzzle-first lessons in algorithms, object design, distributed systems, and machine learning. Guess first, play the mechanic, then read the explanation.",
 };
